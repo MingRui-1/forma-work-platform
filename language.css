@@ -1,0 +1,31 @@
+.language-toggle {
+  margin-left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #c9ccd1;
+  background: #fff;
+  border-radius: 999px;
+  padding: 7px 10px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.language-toggle i { width: 1px; height: 12px; background: #c9ccd1; }
+.language-toggle span:first-child { color: #9297a0; }
+.language-toggle span:last-child { color: var(--ink); }
+html[lang="zh-CN"] .language-toggle span:first-child { color: var(--ink); }
+html[lang="zh-CN"] .language-toggle span:last-child { color: #9297a0; }
+html[lang="zh-CN"] body { font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; }
+html[lang="zh-CN"] .hero h1,
+html[lang="zh-CN"] .intro h2,
+html[lang="zh-CN"] .feature-heading h2,
+html[lang="zh-CN"] .use-case-intro h2,
+html[lang="zh-CN"] .dark-cta h2,
+html[lang="zh-CN"] .final-cta h2,
+html[lang="zh-CN"] .signature-copy h2 { letter-spacing: -2px; }
+
+@media (max-width: 768px) {
+  .language-toggle { margin-left: auto; }
+}
